@@ -19,11 +19,10 @@ def read_eeg_brainvision(eeg_path, montage_name='GSN-HydroCel-128'):
             events.append([int(row[4]), 0, int(row[3])])  # select a column and add to data
             if row[2] not in event_id.keys():
                 event_id[row[2]] = int(row[3])
-
     events = np.array(events)
 
-    annotations = mne.annotations_from_events(events, eeg.info['sfreq'], event_id)
-    eeg.set_annotations(annotations)
+    # annotations = mne.annotations_from_events(events, eeg.info['sfreq'], event_id)
+    # eeg.set_annotations(annotations)
 
     montage = mne.channels.make_standard_montage(montage_name)
     eeg.set_montage(montage)

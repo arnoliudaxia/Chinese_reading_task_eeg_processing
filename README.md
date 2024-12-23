@@ -1,5 +1,7 @@
 # Chinese Linguistic Corpus EEG Dataset Development and Advanced Semantic Decoding
 
+Chinese_reading_task_eeg_processing/data_preprocessing_and_alignment/align_eeg_with_sentence.py
+
 ## Introduction
 
 An Electroencephalography (EEG) dataset utilizing rich text stimuli can advance the understanding of how the brain encodes semantic information and contribute to semantic decoding in brain-computer interface (BCI). Addressing the scarcity of EEG datasets featuring Chinese linguistic stimuli, we present the ChineseEEG dataset, a high-density EEG dataset complemented by simultaneous eye-tracking recordings. This dataset was compiled while 10 participants silently read approximately 11 hours of Chinese text from two well-known novels. This dataset provides long-duration EEG recordings, along with pre-processed EEG sensor-level data and semantic embeddings of reading materials extracted by a pre-trained natural language processing (NLP) model. 
